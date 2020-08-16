@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>shimul</h1>
+    <input id="brand" type="text" placeholder="artist">
+    <input id="gan" type="text" placeholder="song name">
+    <button id="search">search</button>
+    <p id="show"></p>
+    <script>
+       // const getb = document.getElementById('brand')
+        //const getgan = document.getElementById('gan')
+       /* document.getElementById('search').addEventListener('click',function(){
+            fetch('https://api.lyrics.ovh/v1/Coldplay/Adventure of a Lifetime')
+            .then(res => res.json())
+            .then(data =>{
+                //const mylyrics = data.lyrics
+                //document.getElementById('show').innerHTML=mylyrics
+                console.log(data)
+            })
+        })*/
+        fetch('https://api.lyrics.ovh/suggest/baby')
+            .then(res => res.json())
+            .then(data =>{
+                //const mylyrics = data.lyrics
+                //document.getElementById('show').innerHTML=mylyrics
+                console.log(data)
+            })
+    </script>
+</body>
+</html>
